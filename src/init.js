@@ -37,12 +37,12 @@ const displayInit = () => {
     
     const menuTab = document.createElement('button');
     menuTab.id = 'menuTab';
-    menuTab.classList.add('tab');
-    menuTab.innerText = 'MENU'
+    menuTab.classList.add('tab', 'tab-active');
+    menuTab.innerText = 'Menu'
 
     const homeTab = document.createElement('button');
     homeTab.id = 'homeTab';
-    homeTab.classList.add('tab', 'tab-active');
+    homeTab.classList.add('tab');
     homeTab.innerText = 'HOME'
 
     const navTabs = [homeTab, menuTab, contactTab];

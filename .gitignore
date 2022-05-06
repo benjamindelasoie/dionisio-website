@@ -82,7 +82,7 @@ typings/
 .nuxt
 
 # generated output
-dist/main.js    
+dist
 
 # Gatsby files
 .cache/

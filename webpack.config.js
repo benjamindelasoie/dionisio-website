@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -20,8 +21,15 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Dionisio Restobar',
+            template: './src/index.html'
+        }),
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
 };

@@ -1,0 +1,41 @@
+{
+    "title": "menu",
+    "info": "Menu from Restobar Dionisio",
+    "categories": [
+        {
+            "categoryName": "desayunos y meriendas",
+            "dishes": [
+                {
+                    "name": "continental",
+                    "desc": "cafe con leche, 2 medialunas y jugo",
+                    "price": 400
+                },
+                {
+                    "name": "de campo",
+                    "desc": "cafe con leche, tostadas, queso, mermelada y jugo",
+                    "price": 450
+                },
+                {
+                    "name": "cafe + porcion de torta",
+                    "desc": "cafe americano",
+                    "price": 560
+                },
+                {
+                    "name": "saludable",
+                    "desc": "te o cafe, frutas, tostadas, jamon cocido, queso, yogurt, granola",
+                    "price": 940
+                }
+            ]
+        },
+        {
+            "categoryName": "cafe",
+            "dishes": [
+                {
+                    "name": "cafe",
+                    "desc": "vacio",
+                    "price": 180
+                }
+            ]
+        }
+    ]
+}
