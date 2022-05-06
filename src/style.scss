@@ -1,26 +1,77 @@
+@font-face {
+    font-family: 'Garnet-Capitals';
+    src: url(./assets/GarnetCapitals-Regular.ttf) format('truetype'),
+        url(./assets/GarnetCapitals-Regular.woff) format('woff');
+}
+
+$marmol-background: url(./assets/marmol-white-background.webp);
+
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Garnet-Capitals', 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
 }
 
-#content {
-    padding: 20px 40px;
+html, body {
     height: 100%;
+    width: 100%;
+    background-image: $marmol-background;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
     border: 2px solid black;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(170px, 1fr));
-    gap: min(20px, 20%);
-    align-items: center;
+.header {
+    padding: 20px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
 
-    .tab {
-        background-color: brown;
-        padding: 10px 30px;
-        font-size: 1.5rem;
-        border-radius: 15px;
-        font-weight: 500;
+    .brand {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: -10px;
     }
+
+    .subBrand { 
+        text-align: center;
+    }
+
+    nav {
+        flex: auto;
+        padding: 0;
+        display: flex;
+        width: minmax(80px, 1fr);
+        gap: 20px;
+        flex-direction: row;
+        border-bottom: 2px solid black;
+        align-items: center;
+    
+        .tab {
+            flex: auto;
+            border: none;
+            background-color: white;
+            padding: 10px ;
+            font-size: 1.5rem;
+            border-radius: 15px 15px 0 0;
+            font-weight: 500;
+            border: 1px solid black;
+        }
+
+        .tab-active {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.main {
+    border: 2px solid black;
+    margin: 10px 60px 0px 60px;
+    height: 100vh;
 }

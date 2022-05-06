@@ -1,9 +1,6 @@
 
 const displayContact = () => {
-    const contact = document.createElement('h1');
-    contact.innerText = 'ACA TENES EL CONTACT';
-
-    return contact;
+    console.log('display contact');
 }
 
 function logContact() {
