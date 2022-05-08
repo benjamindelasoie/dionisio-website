@@ -22,7 +22,6 @@ html, body {
 }
 
 #content {
-    border: 2px solid black;
     min-width: 400px;
 }
 
@@ -52,7 +51,7 @@ html, body {
         gap: min(20px, 2%);
         flex-direction: row;
         border-bottom: 6px solid black;
-        align-items: center;
+        justify-content: space-around;
     
         .tab {
             color: black;
@@ -65,6 +64,7 @@ html, body {
             font-weight: 500;
             border: 2px solid black;
             border-bottom: none;
+            max-width: 250px;
         }
 
         .tab-active {
@@ -73,6 +73,7 @@ html, body {
         }
     }
 }
+
 
 .main {
     border: 1px solid black;
@@ -147,5 +148,29 @@ html, body {
                 font-size: 1rem;
             }
         }
+    }
+}
+
+.contact {
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-info {
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+
+    .como-llegar {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 10px 30px;
+        border-radius: 12px;
     }
 }

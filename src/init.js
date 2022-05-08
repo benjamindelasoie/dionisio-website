@@ -31,12 +31,12 @@ const displayInit = () => {
     
     const contactTab = document.createElement('button');
     contactTab.id = 'contactTab';
-    contactTab.classList.add('tab');
+    contactTab.classList.add('tab', 'tab-active');
     contactTab.innerText = 'CONTACT';
     
     const menuTab = document.createElement('button');
     menuTab.id = 'menuTab';
-    menuTab.classList.add('tab', 'tab-active');
+    menuTab.classList.add('tab');
     menuTab.innerText = 'Menu'
 
     const homeTab = document.createElement('button');

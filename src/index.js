@@ -43,4 +43,4 @@ function handleClickTab(btn) {
 
 content.appendChild(main);
 
-menu.displayMenu();
+contact.displayContact();
