@@ -28,15 +28,21 @@ const displayMenu = () => {
             dishName.classList.add('dish-name');
             dishName.innerText = dish.name;
 
-            const dishDesc = document.createElement('h5');
-            dishDesc.classList.add('dish-desc');
-            dishDesc.innerText = dish.desc;
-
             const dishPrice = document.createElement('h4');
             dishPrice.classList.add('dish-price');
             dishPrice.innerText = dish.price.toString();
+            
+            dishDiv.append(dishName, dishPrice);
 
-            dishDiv.append(dishName, dishDesc, dishPrice);
+            if (dish.desc != null) {
+                const dishDesc = document.createElement('h5');
+                dishDesc.classList.add('dish-desc');
+                dishDesc.innerText = dish.desc;
+                dishDiv.appendChild(dishDesc);
+            } else {
+                dishDiv.classList.add('dish-no-desc')
+            }
+
 
             dishesDiv.appendChild(dishDiv);
         }

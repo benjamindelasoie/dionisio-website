@@ -1,5 +1,4 @@
-import contact from "./contact";
-import home from "./home";
+const content = document.getElementById('content');
 
 const displayInit = () => {
     const header = document.createElement('div');
@@ -52,9 +51,8 @@ const displayInit = () => {
 
     header.append(headerText, nav);
 
-    return header;    
+    content.appendChild(header);
 }
-
 export default {
     displayInit,
 }

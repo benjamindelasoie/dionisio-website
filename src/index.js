@@ -7,19 +7,18 @@ import "./style.scss";
 
 
 const content = document.getElementById('content');
+
+init.displayInit();
+
 const main = document.createElement('div');
 main.id = 'main';
 main.classList.add('main');
-
-const initialization = init.displayInit();
-content.appendChild(initialization);
 
 const buttons = document.getElementsByClassName('tab');
 
 for(const btn of buttons) {
     btn.addEventListener('click', handleClickTab(btn) ,false);
 }
-
 
 function handleClickTab(btn) {
     return () => {

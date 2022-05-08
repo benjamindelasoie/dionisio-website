@@ -1,6 +1,7 @@
 
 const displayContact = () => {
-    console.log('display contact');
+    const content = document.getElementById('content');
+    
 }
 
 function logContact() {

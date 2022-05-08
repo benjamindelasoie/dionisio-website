@@ -32,8 +32,128 @@
             "dishes": [
                 {
                     "name": "cafe",
-                    "desc": "vacio",
                     "price": 180
+                },
+                {
+                    "name": "cortado",
+                    "price": 190
+                },
+                {
+                    "name": "doble",
+                    "price": 220
+                },
+                {
+                    "name": "cafe con leche",
+                    "price": 240
+                },
+                {
+                    "name": "lagrima",
+                    "price": 180
+                },
+                {
+                    "name": "lagrima doble",
+                    "price": 220
+                },
+                {
+                    "name": "submarino",
+                    "price": 220
+                },
+                {
+                    "name": "te saborizados",
+                    "price": 190
+                },
+                {
+                    "name": "chocolatada",
+                    "price": 190
+                },
+                {
+                    "name": "adicion crema",
+                    "price": 50
+                },
+                {
+                    "name": "cambio por leche vegana",
+                    "price": 70
+                }
+            ]
+        },
+        {
+            "categoryName": "cafes especiales",
+            "dishes": [
+                {
+                    "name": "iced coffee",
+                    "price": 240,
+                    "desc": "expresso, leche, hielo"
+                },
+                {
+                    "name": "capuccino",
+                    "price": 260,
+                    "desc": "expresso, crema, leche, cacao"
+                },
+                {
+                    "name": "capuccino italiano",
+                    "price": 260,
+                    "desc": "expresso, crema, leche, cacao, canela"
+                },
+                {
+                    "name": "caramel",
+                    "price": 280,
+                    "desc": "expresso, dulce de leche, crema y caramelo"
+                },
+                {
+                    "name": "confit",
+                    "price": 280,
+                    "desc": "expresso, leche condensada, crema y nueces"
+                },
+                {
+                    "name": "irlandes",
+                    "price": 290,
+                    "desc": "expresso, crema, whisky, canela"
+                },
+                {
+                    "name": "dionisio",
+                    "price": 340,
+                    "desc": "expresso, crema, baileys, chocolate"
+                }
+            ]
+        },
+        {
+            "categoryName": "nuestras tortas",
+            "dishes": [
+                {
+                    "name": "dionisio",
+                    "price": 420
+                },
+                {
+                    "name": "cheesecake",
+                    "price": 420
+                },
+                {
+                    "name": "delicia de chocolate",
+                    "price": 420
+                },
+                {
+                    "name": "rogel",
+                    "price": 420
+                },
+                {
+                    "name": "lemon pie",
+                    "price": 420
+                },
+                {
+                    "name": "alemana de manzana",
+                    "price": 420
+                },
+                {
+                    "name": "nucha",
+                    "price": 420
+                },
+                {
+                    "name": "carrot cake",
+                    "price": 420
+                },
+                {
+                    "name": "frida",
+                    "price": 420
                 }
             ]
         }

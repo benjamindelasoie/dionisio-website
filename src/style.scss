@@ -10,18 +10,20 @@ $marmol-background: url(./assets/marmol-white-background.webp);
     font-family: 'Garnet-Capitals', 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
+    font-size: 14px;
 }
 
 html, body {
     height: 100%;
     width: 100%;
     background-image: $marmol-background;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }
 
 #content {
     border: 2px solid black;
+    min-width: 400px;
 }
 
 .header {
@@ -47,9 +49,9 @@ html, body {
         padding: 0;
         display: flex;
         width: minmax(80px, 1fr);
-        gap: 20px;
+        gap: min(20px, 2%);
         flex-direction: row;
-        border-bottom: 2px solid black;
+        border-bottom: 6px solid black;
         align-items: center;
     
         .tab {
@@ -61,7 +63,7 @@ html, body {
             font-size: 1.5rem;
             border-radius: 15px 15px 0 0;
             font-weight: 500;
-            border: 1px solid black;
+            border: 2px solid black;
             border-bottom: none;
         }
 
@@ -75,23 +77,26 @@ html, body {
 .main {
     border: 1px solid black;
     margin: 0px 60px 0px 60px;
-    height: 100vh;
 }
 
 .menu {
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px 40px;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     .category {
-
+        margin-bottom: 12px;
+        border-bottom: 3px solid black;
         .category-name {
             font-size: 1.5rem;
             text-decoration: underline;
-            padding-bottom: 12px;
+            padding-bottom: 6px;
         }
 
         .dishes {
-            // border: 2px solid red;
 
-            .dish {
+            .dish{
                 display: grid;
                 grid-template-columns: 5fr 1fr;
                 grid-template-rows: repeat(2, 1fr);
@@ -99,22 +104,47 @@ html, body {
                 .dish-name {
                     grid-row: 1;
                     grid-column: 1;
-                    font-size: 1rem;
                 }
-
+                
                 .dish-desc {
-                    font-size: 0.7rem;
                     grid-row: 2;
                     grid-column: 1;
                 }
-
+                
                 .dish-price {
-                    align-self: center;
-                    text-align: end;
-                    font-size: 1rem;
                     grid-row: 1 / 3;
                     grid-column: 2 / 3;
                 }
+            }
+            
+            .dish.dish-no-desc {
+                display: grid;
+                grid-template-columns: 5fr, 1fr;
+                grid-template-rows: 1fr;
+                gap: 4px;
+                
+                .dish-name {
+                    grid-column: 1;
+                }
+                
+                .dish-price {
+                    grid-column: 2;
+                }
+            }
+            
+            .dish-name {
+                font-size: 1rem;
+            }
+            
+            .dish-desc {
+                font-size: 0.7rem;
+                color: #888
+            }
+            
+            .dish-price {
+                align-self: center;
+                text-align: end;
+                font-size: 1rem;
             }
         }
     }
