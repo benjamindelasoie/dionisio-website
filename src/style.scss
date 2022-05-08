@@ -50,38 +50,37 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     gap: 16px;
 
     .brand {
-        text-align: center;
         font-size: 3rem;
     }
 
     .subBrand { 
-        text-align: center;
+        font-size: 1rem;
     }
 
     nav {
         flex: auto;
-        padding: 0;
         display: flex;
-        gap: min(20px, 2%);
+        gap: min(1%, 30px);
         flex-direction: row;
-        border-bottom: 4px solid black;
-        justify-content: space-around;
+        border-bottom: 3px solid black;
+        justify-content: space-between;
     
         .tab {
             color: black;
             flex: auto;
             border: none;
             background-color: white;
-            padding: 10px ;
-            font-size: 1.5rem;
+            padding: 2px 5px;   
+            font-size: 1.2rem;
             border-radius: 15px 15px 0 0;
             font-weight: 500;
             border: 2px solid black;
             border-bottom: none;
-            max-width: 250px;
+            // max-width: 250px;
         }
 
         .tab-active {
@@ -170,20 +169,23 @@ html, body {
 }
 
 .contact {
-    padding: 10px 60px;
+    margin: 20px 30px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 3px 3px 50px lightgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .contact-info {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
         line-height: 2.5rem;
     }
 
     .como-llegar {
-        margin-top: 20px;
+        margin: 20px;
         font-size: 1.5rem;
         color: white;
         background-color: black;
